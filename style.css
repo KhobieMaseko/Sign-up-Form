@@ -1,0 +1,178 @@
+@font-face {
+    font-family: 'Norse';
+    src: url('Norse-Bold.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background-image: url('mohamed-nohassi-odxB5oIG_iA-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 40%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    margin-top: 15vh;
+}
+
+.odin-logo {
+    height: 70px;
+}
+
+.logo-container h1 {
+    font-family: 'Norse', sans-serif;
+    font-size: 4.5rem;
+    color: white;
+}
+
+.credit {
+    text-align: center;
+    font-size: 0.7rem;
+    padding: 10px;
+}
+
+.credit a {
+    color: white;
+}
+
+/* Main Content Styles */
+.main {
+    width: 60%;
+    background-color: #f9fafb;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+    line-height: 1.4;
+}
+
+.intro p {
+    margin-bottom: 15px;
+}
+
+/* Form Styles */
+.signup-form {
+    background-color: white;
+    padding: 15px 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.signup-form h2 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.form-row {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    font-size: 0.65rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #333;
+    margin-bottom: 2px;
+}
+
+input {
+    padding: 7px;
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+    font-size: 0.9rem;
+}
+
+input:focus {
+    border-color: #1a73e8;
+    box-shadow: 0 0 3px rgba(26, 115, 232, 0.3);
+    outline: none;
+}
+
+input:invalid {
+    border-color: #e74c3c;
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 0.6rem;
+    margin-top: 2px;
+    display: none;
+}
+
+input:invalid + .error-message {
+    display: block;
+}
+
+/* Button Styles */
+.create-account-btn {
+    background-color: #596D48;
+    color: white;
+    border: none;
+    padding: 10px 35px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.create-account-btn:hover {
+    background-color: #4a5a3b;
+}
+
+/* Login Link Styles */
+.login {
+    font-size: 0.85rem;
+}
+
+.login a {
+    color: #596D48;
+    font-weight: bold;
+    text-decoration: none;
+}
